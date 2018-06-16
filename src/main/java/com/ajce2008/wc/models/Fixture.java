@@ -13,8 +13,6 @@ public class Fixture {
     private Date matchStartTime;
     private Integer homeTeamId;
     private Integer awayTeamId;
-    private String homeTeam;
-    private String awayTeam;
 
     public Integer getFixtureId() {
         return fixtureId;
@@ -68,23 +66,5 @@ public class Fixture {
     @Column(name = "AWAY_TEAM_ID")
     public void setAwayTeamId(Integer awayTeamId) {
         this.awayTeamId = awayTeamId;
-    }
-
-    public String getHomeTeam() {
-        return homeTeam;
-    }
-
-    @Transient
-    public void setHomeTeam(String homeTeam) {
-        this.homeTeam = homeTeam;
-    }
-
-    public String getAwayTeam() {
-        return awayTeam;
-    }
-
-    @Transient
-    public void setAwayTeam(String awayTeam) {
-        this.awayTeam = awayTeam;
     }
 }

@@ -165,7 +165,7 @@ insert into users values(63,'ANISH SAM','EEE');
 insert into users values(64,'TEENU','CSE');
 commit;
 
-insert into predictions(1,1,48,-1,current_timestamp());
-insert into scores(1,1,-1);
+insert into predictions values(1,1,48,-1,current_timestamp());
+insert into scores values(1,1,-1);
 commit;
 

@@ -13,7 +13,7 @@ public class FixturesController {
 
     @GetMapping("/fixture")
     public String fixture(Model model) {
-        model.addAttribute("fixtures", fixtureService.getAllFixturesPopulated());
+        model.addAttribute("fixtures", fixtureService.getAllFixtureDatas());
         return "fixtures";
     }
 }
