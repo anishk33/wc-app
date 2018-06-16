@@ -1,0 +1,15 @@
+drop table fixtures;
+drop table predictions;
+drop table results;
+drop table scores;
+drop table teams;
+drop table users;
+
+create table teams(team_id int, team_name varchar(25));
+create table fixtures(fixture_id int, venue varchar(25), location varchar(40), match_start_time timestamp with time zone, home_team_id int, away_team_id int);
+create table users(user_id int, user_name varchar(25), user_branch varchar(5));
+create table predictions(prediction_id int, fixture_id int, user_id int, winner int, updated_at timestamp with time zone);
+create table scores(score_id int, prediction_id int, score int);
+create table results(result_id int, fixture_id int, winner int);
+
+
